@@ -224,8 +224,8 @@ def lambda_handler(event, context):
             }
         ],
         MetricName='VolumeReadIOPs',
-        StartTime=datetime.now() - timedelta(days=60),
-        EndTime=datetime.now() - timedelta(days=30),
+        StartTime=datetime.now() - timedelta(days=30),
+        EndTime=datetime.now(),
         Period=3600*24,
         Statistics=[
             'Sum'
@@ -244,8 +244,8 @@ def lambda_handler(event, context):
             }
         ],
         MetricName='VolumeWriteIOPs',
-        StartTime=datetime.now() - timedelta(days=60),
-        EndTime=datetime.now() - timedelta(days=30),
+        StartTime=datetime.now() - timedelta(days=30),
+        EndTime=datetime.now(),
         Period=3600*24,
         Statistics=[
             'Sum'
